@@ -1,0 +1,319 @@
+/* =========================================
+   HAULCRAFT — REGISTRATION PAGE STYLES
+   External CSS stylesheet
+   ========================================= */
+
+/* Element selector: styles all paragraph elements */
+p {
+    line-height: 1.8;
+}
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #f4f1eb;
+    color: #292c29;
+}
+
+/* Website header */
+.site-header {
+    background-color: #202321;
+    color: #f4f1eb;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-tag {
+    color: #ff8a3d;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.brand span,
+.site-footer span {
+    color: #ff8a3d;
+}
+
+/* Navigation links */
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.main-nav a {
+    color: #f4f1eb;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+/* Hover effect on links */
+.main-nav a:hover {
+    color: #ff8a3d;
+}
+
+/* Main content width */
+.registration-page {
+    max-width: 950px;
+    margin: 45px auto;
+    padding: 0 22px;
+}
+
+/* Introduction section */
+.form-intro {
+    background-color: #202321;
+    color: #f4f1eb;
+    padding: 40px;
+    border-radius: 8px 8px 0 0;
+}
+
+.eyebrow {
+    color: #ff8a3d;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.form-intro h2 {
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.form-intro p:last-child {
+    max-width: 650px;
+    color: #d0d3cd;
+}
+
+/* Registration form */
+#registration-form {
+    /* ID selector: visible padding and background on the form */
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #dedbd4;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Field groups */
+fieldset {
+    border: 1px solid #d8d4cc;
+    border-radius: 6px;
+    padding: 25px;
+    margin: 0 0 28px;
+    min-width: 0;
+}
+
+legend {
+    padding: 0 10px;
+    color: #a95020;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+/* Labels */
+.form-group > label,
+.question-label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 9px;
+    color: #303630;
+}
+
+.question-label {
+    margin-top: 0;
+}
+
+/* Text, email, password, number, date, dropdown and textarea controls */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    color: #292c29;
+    background-color: #faf9f6;
+    border: 1px solid #c9c7c0;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Attribute selector: visible border for email input */
+input[type="email"] {
+    border: 2px solid #c9c7c0;
+}
+
+/* Focus effect: highlights the active form control */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e97932;
+    box-shadow: 0 0 0 3px rgba(255, 138, 61, 0.18);
+}
+
+/* Placeholder appearance */
+input::placeholder,
+textarea::placeholder {
+    color: #85877f;
+}
+
+/* Radio buttons and checkboxes */
+.choice-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0 25px;
+}
+
+.choice-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f4f1eb;
+    padding: 12px 14px;
+    border-radius: 4px;
+    border: 1px solid #dedbd4;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.choice-group input {
+    accent-color: #d96828;
+}
+
+/* Helper text */
+small {
+    display: block;
+    color: #77796f;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+/* Form action buttons */
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 14px 22px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #f28a40;
+    color: #202321;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect on buttons */
+button:hover {
+    background-color: #ffad70;
+    transform: translateY(-2px);
+}
+
+.reset-button {
+    background-color: #303632;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #4b514b;
+}
+
+button:focus-visible,
+.main-nav a:focus-visible {
+    outline: 3px solid #e97932;
+    outline-offset: 4px;
+}
+
+.form-note {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #77796f;
+}
+
+/* Website footer */
+.site-footer {
+    background-color: #202321;
+    color: #d0d3cd;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.site-footer h2 {
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .site-header {
+        padding: 22px;
+    }
+
+    .main-nav {
+        gap: 15px;
+    }
+
+    .registration-page {
+        margin: 25px auto;
+        padding: 0 12px;
+    }
+
+    .form-intro,
+    #registration-form {
+        padding: 22px;
+    }
+
+    fieldset {
+        padding: 18px;
+    }
+
+    .choice-group {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}

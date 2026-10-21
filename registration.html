@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | HaulCraft</title>
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+        <div class="brand">
+            <p class="brand-tag">FREIGHT EDUCATION / EST. 2026</p>
+            <h1>HAUL<span>CRAFT</span></h1>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="information.html">Training &amp; Packages</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+    </header>
+
+    <main class="registration-page">
+
+        <!-- Form Introduction -->
+        <section class="form-intro">
+            <p class="eyebrow">TAKE THE FIRST STEP</p>
+            <h2>Start Your Dispatching Journey.</h2>
+            <p>
+                Tell us a little about yourself and choose the training
+                option that interests you. This is a demonstration form
+                for an academic assignment.
+            </p>
+        </section>
+
+        <!-- Registration Form -->
+        <form id="registration-form" action="#" method="get">
+
+            <!-- Personal Details -->
+            <fieldset>
+                <legend>01 — Personal Details</legend>
+
+                <div class="form-group">
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" name="full_name"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password *</label>
+                    <input type="password" id="password" name="password"
+                           placeholder="At least 8 characters"
+                           minlength="8" required>
+                    <small>Use at least 8 characters for this demo.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age"
+                           min="16" max="80" placeholder="Enter your age"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferred-date">Preferred Start Date *</label>
+                    <input type="date" id="preferred-date" name="preferred_date"
+                           required>
+                </div>
+            </fieldset>
+
+            <!-- Learning Preferences -->
+            <fieldset>
+                <legend>02 — Learning Preferences</legend>
+
+                <p class="question-label">How would you prefer to learn?</p>
+
+                <div class="choice-group">
+                    <label>
+                        <input type="radio" name="learning_mode"
+                               value="online" required>
+                        Online Learning
+                    </label>
+
+                    <label>
+                        <input type="radio" name="learning_mode"
+                               value="onsite">
+                        On-site Learning
+                    </label>
+
+                    <label>
+                        <input type="radio" name="learning_mode"
+                               value="hybrid">
+                        Hybrid Learning
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Choose a Training Package *</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select a package --</option>
+                        <option value="basics">Dispatching Basics</option>
+                        <option value="booking">Load Booking</option>
+                        <option value="operations">Freight Operations</option>
+                        <option value="complete">Complete Introduction</option>
+                    </select>
+                </div>
+
+                <p class="question-label">Which topics interest you?</p>
+
+                <div class="choice-group">
+                    <label>
+                        <input type="checkbox" name="interests[]"
+                               value="load-booking">
+                        Load Booking
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interests[]"
+                               value="route-planning">
+                        Route Planning
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interests[]"
+                               value="broker-communication">
+                        Broker Communication
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interests[]"
+                               value="documentation">
+                        Freight Documentation
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Additional Information -->
+            <fieldset>
+                <legend>03 — Additional Information</legend>
+
+                <div class="form-group">
+                    <label for="experience">Previous Experience or Questions</label>
+                    <textarea id="experience" name="comments"
+                              rows="5" maxlength="500"
+                              placeholder="Tell us about your interests or questions (maximum 500 characters)."></textarea>
+                    <small>Maximum 500 characters.</small>
+                </div>
+            </fieldset>
+
+            <!-- Form Buttons -->
+            <div class="form-actions">
+                <button type="submit">Submit Registration ↗</button>
+                <button type="reset" class="reset-button">Reset Form</button>
+            </div>
+
+            <p class="form-note">
+                * Required fields. This demonstration form does not create
+                an account or store registration details in a database.
+            </p>
+
+        </form>
+
+        <!-- Audio and Video Section -->
+        <section class="registration-media">
+            <p class="eyebrow">EXPLORE HAULCRAFT</p>
+
+            <h2>Truck Travel Audio</h2>
+            <p>
+                Listen to the audio while exploring the world of
+                transportation and truck dispatching.
+            </p>
+
+            <audio controls preload="metadata">
+                <source src="media/truck-travel.mp3" type="audio/mpeg">
+                Your browser does not support HTML audio.
+            </audio>
+
+            <h2>Watch the Truck Travel Video</h2>
+            <p>
+                Watch the video for a visual introduction to trucks
+                and transportation.
+            </p>
+
+            <video controls preload="metadata">
+                <source src="media/truck-travel.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <h2>HAUL<span>CRAFT</span></h2>
+        <p>Learn the logic behind logistics.</p>
+        <p>&copy; 2026 HaulCraft | Educational Demonstration Website</p>
+    </footer>
+
+    <!-- Small responsive styling for the added media section -->
+    <style>
+        .registration-media {
+            margin-top: 35px;
+            padding: 25px;
+            background-color: #202321;
+            color: #f4f1eb;
+            border-radius: 8px;
+        }
+
+        .registration-media h2 {
+            color: #ff8a3d;
+            margin-top: 25px;
+        }
+
+        .registration-media .eyebrow {
+            color: #ff8a3d;
+            letter-spacing: 2px;
+            font-size: 12px;
+        }
+
+        .registration-media audio,
+        .registration-media video {
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            margin: 15px 0 25px;
+        }
+
+        .registration-media video {
+            background-color: #111;
+            border-radius: 5px;
+        }
+    </style>
+
+</body>
+</html>
